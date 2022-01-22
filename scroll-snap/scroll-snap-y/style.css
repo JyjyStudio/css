@@ -1,0 +1,33 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    /* width: 300px; */
+    height: 100vh;
+    overflow-y: scroll; /* très important */
+    scroll-snap-type: y mandatory;
+}
+.block{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 2em;
+    border-bottom: 5px black solid;
+    scroll-snap-align: center;
+}
+.block:nth-child(1){
+    background-color: #bde0ff;
+}
+.block:nth-child(2){
+    background-color: #ffddbd;
+}
+.block:nth-child(3){
+    background-color: #dbbdff;
+}
+.block:nth-child(4){
+    background-color: #c4f8ef;
+}
